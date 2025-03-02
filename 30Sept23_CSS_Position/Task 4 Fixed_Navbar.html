@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        /* Reset margin and padding */
+        *, *::after, *::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            line-height: 1.6;
+        }
+
+        /* Sticky Navbar */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .navbar ul li {
+            margin-left: 2rem;
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.216);
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar ul li a:hover {
+            background-color: #444;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .navbar .get-started {
+            background: transparent;
+            padding: 0.8rem 1.5rem;
+            color: #e67e22;
+            text-decoration: none;
+            border: 0.1rem solid #e67e22;
+            font-size: 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s;
+        }
+
+        .navbar .get-started:hover {
+            background-color: #e67e22;
+            color: black;
+
+        }
+
+        .content {
+            padding: 4rem 2rem;
+        }
+
+        .content h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        .content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .content .scrollable {
+            background: #f4f4f4;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
+
+        .explanation {
+            background-color: #f9f9f9;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+
+        .explanation h3 {
+            margin-bottom: 1rem;
+        }
+
+        .explanation p {
+            line-height: 1.8;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="logo">MyLogo</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Terms and Conditons</a></li>
+        </ul>
+        <a href="#get-started" class="get-started">Get Started</a>
+    </div>
+
+    <div class="content">
+        <h2>Understanding Sticky and Fixed Positioning in CSS</h2>
+        <p>In CSS, the `position` property controls how an element is positioned in a webpage. There are several types of positioning, including `static`, `relative`, `absolute`, `fixed`, and `sticky`. Each one has its use cases, and understanding the differences is essential for creating effective layouts.</p>
+
+        <div class="explanation">
+            <h3>Sticky Position</h3>
+            <p>The `sticky` value is a hybrid between `relative` and `fixed`. When an element has `position: sticky`, it behaves like a relatively positioned element until a certain point is reached on the page, at which it becomes "fixed" and stays in place as the user scrolls. This is useful for creating elements like sticky headers or navigation bars.</p>
+            <p>For example, in our navbar, the `position: sticky` keeps the navbar at the top of the page even as you scroll down the content. However, when you scroll back up, it returns to its normal place, as if it were relatively positioned.</p>
+
+            <h3>Fixed Position</h3>
+            <p>The `fixed` value, on the other hand, completely removes an element from the normal document flow and fixes it relative to the viewport. This means it will always remain in the same place even when you scroll the page. An example of this is the "Get Started" button in the navbar, which is fixed at the top of the page and will remain there when the user scrolls.</p>
+        </div>
+
+        <div class="scrollable">
+            <p>This is an example of a long content section. As you scroll down, the navbar remains at the top due to its sticky positioning. Try scrolling down to see the effect!</p>
+        </div>
+    </div>
+</body>
+</html>

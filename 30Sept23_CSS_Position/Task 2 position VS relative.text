@@ -1,0 +1,13 @@
+1. Absolute
+ The element is positioned relative to its nearest positioned ancestor (i.e., an ancestor element with any position other than static). 
+If no such ancestor exists,it will be positioned relative to the initial containing block (usually the viewport or the <html> element).
+
+Removed from normal document flow: This means the element does not affect the layout of other elements and is not considered part of the flow of the document.
+
+2. Relative
+
+ The element is positioned relative to its normal position in the document flow. 
+You can use the top, right, bottom, or left properties to adjust its position,
+ but it will still take up space in the layout, so it affects surrounding elements.
+
+Keeps its place in the flow: Unlike absolute, it doesn't remove the element from the document's layout. It only shifts the element from its original position.
