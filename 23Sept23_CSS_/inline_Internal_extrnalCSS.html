@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Styling Example</title>
+
+    <!-- Internal CSS (within <style> tags) -->
+    <style>
+        /* This is an internal CSS block where you can target elements on the page */
+        .internal-style {
+            background-color: lightblue;
+            padding: 20px;
+            font-size: 1.2em;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .internal-style:hover {
+            background-color: lightgreen; /* Hover effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS applied directly within the element -->
+    <div style="background-color: lightcoral; padding: 20px; font-size: 1.2em; text-align: center;">
+        This div uses inline CSS
+    </div>
+
+    <!-- External CSS applied through a separate file (uncomment to use external CSS) -->
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <!-- Div with Internal CSS class -->
+    <div class="internal-style">
+        This div uses internal CSS
+    </div>
+
+    <!-- External CSS is usually placed in a separate file (styles.css) and linked here -->
+    <!-- Example external CSS file content (styles.css):
+    .external-style {
+        background-color: lightgoldenrodyellow;
+        padding: 20px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+    -->
+
+    <!-- Div with External CSS class (use this if external CSS file is linked) -->
+    <div class="external-style">
+        This div uses external CSS (if the external file is included)
+    </div>
+
+    <!-- The following comment explains what each CSS method does -->
+    <!-- 
+        1. Inline CSS: Directly applied within the HTML element using the `style` attribute.
+        2. Internal CSS: Placed inside the `<style>` tags within the `<head>` of the HTML document.
+        3. External CSS: Linked via a separate stylesheet, typically used for larger projects for better maintainability.
+    -->
+</body>
+</html>
