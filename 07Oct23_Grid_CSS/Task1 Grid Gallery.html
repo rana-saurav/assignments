@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 70%;
+    height: 40rem;
+    outline: 2px solid black;
+}
+.image_Gallary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(3, 1fr);    /* 3 rows */
+    gap: 10px;
+}
+.item {
+    border: 1px solid red;
+    height: 12.9rem;
+    font-size: 2rem;
+    background-color: lightgray; 
+}
+.item img {
+    width: 100%;
+    height: 100%;
+}
+
+.item1{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item1{
+    grid-column-start:1 ;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item2{
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.item3{
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.item4{
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item5{
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.item6{
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="image_Gallary">
+            <div class="item item1">
+                <img src="./images/janis-ringli-AFxYcoA9LGM-unsplash.jpg" alt="">
+                 
+            </div>
+            <div class="item item2">
+                <img src="./images/lucas-gallone-PiM4zerICok-unsplash.jpg" alt="">
+                 
+            </div>
+            <div class="item item3">
+                <img src="./images/nir-himi-KSlJhcpDaQk-unsplash.jpg" alt="">
+                 
+            </div>
+            <div class="item item4">
+<img src="./images/nir-himi-ljvKJ84BV3o-unsplash.jpg" alt="">
+ 
+            </div>
+            <div class="item item5">
+<img src="./images/patrick-shaun-d7TxQooShcw-unsplash.jpg" alt="">
+ 
+            </div>
+            <div class="item item6">
+                
+                <img src="./images/janis-ringli-AFxYcoA9LGM-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
