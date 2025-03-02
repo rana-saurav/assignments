@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+  }
+  
+  .app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box-container {
+    transform-style: preserve-3d;
+    animation: rotateBox 5s infinite linear;
+  }
+  
+  .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform: rotateY(20deg) rotateX(-5deg);
+  }
+  
+  .face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1), -5px -5px 15px rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Position the faces in 3D space */
+  .front {
+    transform: translateZ(100px);
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  /* Rotation animation */
+  @keyframes rotateBox {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    25% {
+      transform: rotateX(90deg) rotateY(0deg);
+    }
+    50% {
+      transform: rotateX(180deg) rotateY(0deg);
+    }
+    75% {
+      transform: rotateX(270deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(0deg);
+    }
+  }
+  
