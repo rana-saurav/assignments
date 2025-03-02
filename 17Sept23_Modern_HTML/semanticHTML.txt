@@ -1,0 +1,23 @@
+1. <article>: Represents an independent piece of content.
+
+2. <section>: Defines sections of a document.
+
+3. <nav>: Defines navigation links.
+
+4. <header>: Represents the header of a document or section.
+
+5. <footer>: Represents the footer of a document or section.
+
+6. <aside>: Represents content aside from the main content (e.g., sidebar).
+
+7. <figure>: Represents content like images, illustrations, etc.
+
+8. <figcaption>: Provides a caption for a <figure> element.
+
+9. <mark>: Highlights text for relevance.
+
+10. <progress>: Displays the progress of a task.
+
+11. <output>: Represents the result of a user action.
+
+12. <main>: Represents the main content of the document.

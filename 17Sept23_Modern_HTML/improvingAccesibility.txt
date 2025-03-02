@@ -1,0 +1,15 @@
+1. Use Semantic HTML Elements
+HTML5 introduces a number of semantic elements that help define the structure of the web page in a meaningful way. These elements provide context for screen readers and other assistive technologies, making it easier for users to navigate the content.
+
+For example, instead of using generic <div> or <span> elements, use semantic elements like:
+<header> for the page header
+<nav> for navigation links
+<main> for the main content of the page
+<footer> for the footer content
+<article> and <section> to organize content meaningfully
+
+2. Provide Text Alternatives (Alt Text) for Images
+One of the most crucial accessibility features is adding alternative text (alt text) to images, which allows users with visual impairments to understand what an image represents through screen readers.
+
+3. Ensure Keyboard Accessibility
+Keyboard navigation is essential for users who can't use a mouse due to motor impairments. HTML5 encourages the use of interactive elements like <button>, <a>, and <input> that are automatically keyboard-navigable

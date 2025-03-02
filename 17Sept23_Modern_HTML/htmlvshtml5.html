@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML vs HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1000px;
+            min-height: 62vh;
+            margin: 0 auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML vs HTML5: Key Differences</h1>
+    </header>
+
+    <main>
+        <p>Below is a comparison of HTML and HTML5 highlighting their differences:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>HTML</th>
+                    <th>HTML5</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Relies on plugins like Flash for multimedia content (audio, video)</td>
+                    <td>Supports native audio and video embedding with <code>&lt;audio&gt;</code> and <code>&lt;video&gt;</code> elements</td>
+                </tr>
+                <tr>
+                    <td>No native support for drawing graphics</td>
+                    <td>Introduces the <code>&lt;canvas&gt;</code> element for dynamic graphics drawing</td>
+                </tr>
+                <tr>
+                    <td>Uses <code>&lt;frameset&gt;</code> for creating multiple browser windows</td>
+                    <td>Does not use <code>&lt;frameset&gt;</code>; promotes the use of <code>&lt;iframe&gt;</code> for embedding content</td>
+                </tr>
+                <tr>
+                    <td>Forms do not have many input types</td>
+                    <td>HTML5 introduces new input types like <code>&lt;input type="email"&gt;</code>, <code>&lt;input type="date"&gt;</code>, <code>&lt;input type="range"&gt;</code> for better user interaction</td>
+                </tr>
+                <tr>
+                    <td>Metadata like character encoding is specified using <code>&lt;meta&gt;</code> tags only</td>
+                    <td>HTML5 uses <code>&lt;meta charset="UTF-8"&gt;</code> for simpler character encoding declaration</td>
+                </tr>
+                <tr>
+                    <td>Does not support offline applications</td>
+                    <td>HTML5 introduces the <code>localStorage</code> API for offline storage and <code>applicationCache</code> for offline apps</td>
+                </tr>
+                <tr>
+                    <td>JavaScript is primarily used for web animations</td>
+                    <td>HTML5 introduces CSS3 for animations and transitions, enabling smoother and more efficient animations</td>
+                </tr>
+                <tr>
+                    <td>Uses <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> tags for layout and structure</td>
+                    <td>HTML5 introduces more semantic tags like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;header&gt;</code>, and <code>&lt;footer&gt;</code> for better document structure and readability</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 HTML vs HTML5 Comparison. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+HTML Entities are special codes or character sequences that represent characters in HTML that either have a reserved meaning or cannot be typed directly into the HTML source code. 
+They are used to display characters that are not easily typed using a regular keyboard or might cause issues in the HTML syntax, 
+such as symbols, accents, or special characters.
+
+HTML entities are typically written using an ampersand (&), 
+followed by the entity name (or number), and then a semicolon (;). 
+For example, &lt; is the HTML entity for the "less than" symbol (<), which is a reserved character in HTML.
+
+&lt;	<	Less than
+&gt;	>	Greater than
+&amp;	&	Ampersand
+&quot;	"	Double quote
+&nbsp;	(space)	Non-breaking space
