@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *,::after,::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            height: 100%;
+        }
+
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 5rem;
+        }
+
+        .image_Gallary{
+            width: 90%;
+            height: 900px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 2rem;
+        }
+
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+
+        .image img{
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: 800px) {
+            .image_Gallary{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .image_Gallary{
+                grid-template-columns: 1fr;
+            }
+        }
+
+</style>
+<body>
+    <div class="container">
+        <div class="image_Gallary">
+            <div class="image">
+                <img src="./images/janis-ringli-AFxYcoA9LGM-unsplash.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/lucas-gallone-PiM4zerICok-unsplash.jpg" alt="">
+            </div>
+            <div class="image">
+                <img src="./images/marek-piwnicki-FrR0nSrJyyw-unsplash.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
